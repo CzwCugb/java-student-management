@@ -58,8 +58,13 @@ public class SetScoreOperator extends JPanel {
                 int noCol = dataModel.findColumn("学号");
                 int scoreCol = dataModel.findColumn("分数");
                 for(int i = 0 ; i < rows ; i ++){
+                    String sScore_;
+                    if(dataModel.getValueAt(i,scoreCol) == null){
+                        sScore_ = "NULL";
+                    }else{
+                         sScore_ = dataModel.getValueAt(i,scoreCol).toString();
+                    }
                     String sNo_ =  dataModel.getValueAt(i,noCol).toString();
-                    String sScore_ = dataModel.getValueAt(i,scoreCol).toString();
                     String where_ = "WHERE SC.sNo = " + "'" + sNo_ + "'" + " AND SC.cNo = " + "'" + selectedCourseNo + "'";
                     try {
                         conn.sqlUpdate("SC","SC.scScore",sScore_,where_);
@@ -77,11 +82,11 @@ public class SetScoreOperator extends JPanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 int rows = dataModel.getRowCount();
-                int noCol = dataModel.findColumn("学号");
+                int noCol = dataModel.findColumn("课程编号");
                 for(int i = 0 ; i < rows ; i ++){
-                    String sNo_ =  dataTable.getValueAt(i,noCol).toString();
+                    String cNo_ =  dataTable.getValueAt(i,noCol).toString();
                     String sScore_ = "NULL";
-                    String where_ = "WHERE SC.sNo = " + "'" + sNo_ + "'";
+                    String where_ = "WHERE SC.cNo = " + "'" + cNo_ + "'";
                     try {
                         conn.sqlUpdate("SC","SC.scScore",sScore_,where_);
                     } catch (SQLException ex) {

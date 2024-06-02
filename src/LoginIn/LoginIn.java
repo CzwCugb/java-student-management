@@ -2,9 +2,7 @@ package LoginIn;
 
 import Official.OfficialManager;
 import Student.StudentManager;
-import Teacher.MessageOperator;
 import Teacher.TeacherManager;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -41,7 +39,7 @@ public class LoginIn extends JFrame {
 
     public LoginIn(){
         setTitle("学生教务管理系统");
-        setSize(800,600);
+        setSize(813,600);
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pane = this.getContentPane();
