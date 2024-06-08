@@ -19,6 +19,8 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class SetStudentOperator extends JPanel {
 
+    //管理员端：学生管理页面
+
     private JTable dataTable = new JTable(){
         @Override
         public boolean isCellEditable(int row, int column) {

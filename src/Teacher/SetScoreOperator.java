@@ -16,6 +16,8 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class SetScoreOperator extends JPanel {
 
+    //教师端：成绩录入页面
+
     private String selectedCourseNo = "NOTHING";
     private DefaultTableModel dataModel = null;
     private JTable dataTable = new JTable(){

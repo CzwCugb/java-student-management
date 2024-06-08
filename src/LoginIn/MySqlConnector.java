@@ -1,12 +1,11 @@
 package LoginIn;
 import java.sql.*;
 
-
 public class MySqlConnector {
 
     private static String url = "jdbc:mysql://localhost:3306/School?";
     public static String sqlUser = "root";
-    private static String sqlPassword = "Czw234678?";
+    private static String sqlPassword = "请更改该字符串为：本地数据库密码";
     private static Connection connection = null;
     private static Statement statement = null;
 
@@ -19,6 +18,7 @@ public class MySqlConnector {
         }
     }
 
+    //在java中增删改查的相关函数
     public ResultSet sqlQuery(String sql) throws SQLException {
         ResultSet res = statement.executeQuery(sql);
         return res;

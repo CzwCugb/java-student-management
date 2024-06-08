@@ -15,6 +15,8 @@ import java.sql.SQLException;
 
 public class queryScoreOperator extends JPanel {
 
+    //学生端：成绩查询页面
+
     private JTable dataTable = new JTable(){
         @Override
         public boolean isCellEditable(int row, int column) {

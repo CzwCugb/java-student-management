@@ -13,6 +13,8 @@ import static javax.swing.JOptionPane.*;
 
 public class MessageOperator extends JPanel{
 
+    //教师端：个人信息页面
+
     private JTextField noInput = new JTextField(10);
     private JTextField colleageInput = new JTextField(10);
     private JTextField nameInput = new JTextField(10);

@@ -13,12 +13,12 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Hashtable;
-
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class LoginIn extends JFrame {
 
+    //程序入口
     public static void main(String[] args) {
         new LoginIn();
     }
@@ -37,8 +37,9 @@ public class LoginIn extends JFrame {
     public static String username;
     private String password;
 
+    //登录页面
     public LoginIn(){
-        setTitle("学生教务管理系统");
+        setTitle("学校教务管理系统");
         setSize(813,600);
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -50,7 +51,7 @@ public class LoginIn extends JFrame {
         titleArea.add(title, BorderLayout.SOUTH);
         titleArea.setBackground(new Color(151, 184, 225));
 
-        title.setText("学生教务管理系统");
+        title.setText("学校教务管理系统");
         title.setFont(new Font("微软雅黑",Font.BOLD,35));
         title.setHorizontalAlignment(JLabel.CENTER);
 
@@ -125,6 +126,7 @@ public class LoginIn extends JFrame {
         pane.add(clickArea, BorderLayout.CENTER);
     }
 
+    //哈希表存储账号密码
     private void initLoginMap(String accountType_) {
         loginMap.clear();
         String table_;

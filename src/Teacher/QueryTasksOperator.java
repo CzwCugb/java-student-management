@@ -15,6 +15,8 @@ import java.sql.SQLException;
 
 public class QueryTasksOperator extends JPanel {
 
+    //教师端：教学任务页面
+
     private  JTable dataTable = new JTable(){
         @Override
         public boolean isCellEditable(int row, int column) {

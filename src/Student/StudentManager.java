@@ -8,6 +8,8 @@ import java.sql.*;
 
 public class StudentManager extends JPanel{
 
+    //学生端主页面
+
     private JPanel father = null;
     private JPanel me = this;
     private JButton messageButton = new JButton("查询/修改个人信息");

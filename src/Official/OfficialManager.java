@@ -7,6 +7,8 @@ import java.awt.event.MouseEvent;
 
 public class OfficialManager extends JPanel {
 
+    //管理员端主页面
+
     private JPanel father = null;
     private JPanel me = this;
     private JButton messageButton = new JButton("个人信息");

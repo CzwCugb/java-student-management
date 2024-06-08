@@ -15,6 +15,8 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class PickCourseOperator extends JPanel{
 
+    //学生端：学生选课/退课页面
+
     private JTable dataTable = new JTable(){
         @Override
         public boolean isCellEditable(int row, int column) {

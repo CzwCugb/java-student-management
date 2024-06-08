@@ -14,6 +14,8 @@ import static javax.swing.JOptionPane.*;
 
 public class MessageOperator extends JPanel {
 
+    //管理员端查询个人信息页面
+
     private JTextField noInput = new JTextField(10);
     private JTextField nameInput = new JTextField(10);
     private JTextField ageInput = new JTextField(10);

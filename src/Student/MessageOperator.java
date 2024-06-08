@@ -11,6 +11,8 @@ import static javax.swing.JOptionPane.*;
 
 public class MessageOperator extends JPanel{
 
+    //学生端：个人信息页面
+
     private JTextField noInput = new JTextField(10);
     private JTextField majorInput = new JTextField(10);
     private JTextField colleageInput = new JTextField(10);
