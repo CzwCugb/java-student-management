@@ -3,15 +3,15 @@ import java.sql.*;
 
 public class MySqlConnector {
 
-    private static String url = "jdbc:mysql://localhost:3306/School?";
+    private static String url = "jdbc:mysql://localhost:3306/school?";
     public static String sqlUser = "root";
-    private static String sqlPassword = "请更改该字符串为：本地数据库密码";
+    private static String sqlPassword = "YourPassword";
     private static Connection connection = null;
     private static Statement statement = null;
 
     public MySqlConnector() {
         try {
-            connection = DriverManager.getConnection(url,sqlUser,sqlPassword);
+            connection = DriverManager.getConnection(url, sqlUser, sqlPassword);
             statement = connection.createStatement();
         } catch (SQLException e) {
             throw new RuntimeException(e);
